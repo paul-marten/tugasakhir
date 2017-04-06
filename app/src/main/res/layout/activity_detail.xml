@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="paul.develops.ta.Activity.DetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Deskripsi Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDeskripsiNama"
+            android:textSize="24sp"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            app:srcCompat="@color/colorPrimary"
+            android:id="@+id/imgButDet"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/windowBackground" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16" />
+
+        <TextView
+            android:text="Deskripsi"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtDeskripsiNama"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:text="Deskripsi Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDeskripsiInfo"
+            android:textSize="24sp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="English"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:textSize="18sp"
+                android:layout_below="@+id/txtDeskripsiInfo"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7">
+
+                <TextView
+                    android:text="English"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtEnglish"
+                    android:layout_weight="1"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    app:srcCompat="@drawable/music"
+                    android:id="@+id/butEnglish"
+                    android:background="?android:attr/windowBackground"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Batak"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:textSize="18sp"
+                android:layout_below="@+id/txtDeskripsiInfo"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7">
+
+                <TextView
+                    android:text="Batak"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBatak"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:foregroundGravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    app:srcCompat="@drawable/music"
+                    android:id="@+id/butBatak"
+                    android:background="?android:attr/windowBackground"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/market2">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginEnd="101dp"
+        android:id="@+id/imgPisang1"
+        android:layout_above="@+id/imgApel"
+        android:layout_toStartOf="@+id/imgSemangka" />
+
+    <ImageView
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginStart="167dp"
+        android:layout_marginBottom="69dp"
+        android:id="@+id/imgApel"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginEnd="41dp"
+        android:id="@+id/imgJeruk"
+        android:layout_alignTop="@+id/imgApel"
+        android:layout_alignEnd="@+id/imgApel"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginEnd="65dp"
+        android:id="@+id/imgSemangka"
+        android:layout_alignBottom="@+id/imgApel"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginStart="11dp"
+        android:id="@+id/imgPisang2"
+        android:layout_above="@+id/imgSemangka"
+        android:layout_alignStart="@+id/imgPisang1" />
+</RelativeLayout>

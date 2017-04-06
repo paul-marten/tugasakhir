@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/papantulis">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txtKeluargaIndo"
+        android:textSize="36sp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgIconKeluarga" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginStart="26dp"
+        android:id="@+id/imgIconKeluarga"
+        android:layout_below="@+id/txtKeluargaIndo"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKeluargaBat"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/txtKeluargaEng"
+        android:layout_toEndOf="@+id/imgIconKeluarga"
+        android:layout_marginStart="58dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/txtKeluargaEng"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/txtKeluargaIndo"
+        android:layout_alignStart="@+id/txtKeluargaBat" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/musickel"
+        android:id="@+id/imgSoundEng"
+        android:layout_alignTop="@+id/txtKeluargaEng"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="58dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/musickel"
+        android:layout_alignBottom="@+id/txtKeluargaBat"
+        android:layout_alignStart="@+id/imgSoundEng"
+        android:id="@+id/imgSoundBatak" />
+</RelativeLayout>

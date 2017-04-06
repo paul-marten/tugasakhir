@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/papantulis">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/blank"
+        android:id="@+id/imgKelDad"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/blank"
+        android:id="@+id/imgKelNenek"
+        android:layout_alignTop="@+id/imgKelKakek"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/blank"
+        android:id="@+id/imgKelMom"
+        android:layout_alignTop="@+id/imgKelDad"
+        android:layout_toEndOf="@+id/imgKelDad"
+        android:layout_marginStart="48dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/blank"
+        android:id="@+id/imgKelKakek"
+        android:layout_marginEnd="40dp"
+        android:layout_alignTop="@+id/imgKelMom"
+        android:layout_toStartOf="@+id/imgKelNenek" />
+</RelativeLayout>
