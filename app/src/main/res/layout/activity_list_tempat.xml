@@ -31,7 +31,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -83,6 +83,32 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19" />
+
+        <Button
+            android:text="Kuis Gambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnKuisGambar"
+            android:drawableRight="@drawable/quiz"
+            android:background="@color/cardview_light_background"
+            android:textColor="@color/colorPrimaryDark"
+            android:alpha="0.9"
+            android:foregroundGravity="center_horizontal" />
+
+        <Button
+            android:text="Kuis Suara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnKuisSuara"
+            android:drawableRight="@drawable/quiz"
+            android:alpha="0.9"
+            android:background="@color/cardview_light_background"
+            android:textColor="@color/colorPrimaryDark" />
 
     </LinearLayout>
 

@@ -1,14 +1,18 @@
 package paul.develops.ta.Activity.AnggotaKeluarga;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
 import paul.develops.ta.Activity.DetailActivity;
+import paul.develops.ta.Activity.Kuis.AnggotaKeluargaKuisActivity;
+import paul.develops.ta.Activity.Kuis.AnggotaKeluargaSuaraActivity;
 import paul.develops.ta.Activity.Test2Activity;
 import paul.develops.ta.Activity.TestActivity;
 import paul.develops.ta.R;
@@ -34,6 +38,8 @@ public class ListKeluargaActivity extends AppCompatActivity {
         ImageView imgMom = (ImageView) findViewById(R.id.imgKelMom);
         ImageView imgKakek = (ImageView) findViewById(R.id.imgKelKakek);
         ImageView imgNenek = (ImageView) findViewById(R.id.imgKelNenek);
+        ImageView imgKuis = (ImageView) findViewById(R.id.imgKuisAnggota);
+        ImageView imgSuara = (ImageView) findViewById(R.id.imgSuaraAnggota);
 
         Picasso.with(imgDad.getContext())
                 .load(restClient.url()+"/images/gameicon/bapak2.png").resize(400, 400).centerCrop()
@@ -118,5 +124,48 @@ public class ListKeluargaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        imgKuis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent kuisAng = new Intent(ListKeluargaActivity.this, AnggotaKeluargaKuisActivity.class);
+                startActivity(kuisAng);
+            }
+        });
+
+        imgSuara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent suaraAng = new Intent(ListKeluargaActivity.this, AnggotaKeluargaSuaraActivity.class);
+                startActivity(suaraAng);
+            }
+        });
+        blink();
+    }
+
+    private void blink(){
+        final Handler handler = new Handler();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int timeToBlink = 1000;    //in milissegunds
+                try{Thread.sleep(timeToBlink);}catch (Exception e) {}
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        TextView txt = (TextView) findViewById(R.id.txtKuisAng);
+                        TextView txt2 = (TextView) findViewById(R.id.txtSuaraAng);
+                        if(txt.getVisibility() == View.VISIBLE){
+                            txt.setVisibility(View.INVISIBLE);
+                            txt2.setVisibility(View.VISIBLE);
+                        }else{
+                            txt.setVisibility(View.VISIBLE);
+                            txt2.setVisibility(View.INVISIBLE);
+                        }
+                        blink();
+                    }
+                });
+            }
+        }).start();
     }
 }

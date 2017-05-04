@@ -76,12 +76,21 @@
             android:name=".Activity.AnggotaKeluarga.DetailKeluargaActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".Activity.Tumbuhan.SawahActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Activity.Tumbuhan.SawahActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            ></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Activity.Kuis.ResultActivity" />
+        <activity android:name=".Activity.Kuis.KuisActivity" />
+        <activity android:name=".Activity.Kuis.HewanKuisActivity" />
+        <activity android:name=".Activity.Kuis.HewanKuisSuaraActivity" />
+        <activity android:name=".Activity.Kuis.AnggotaKeluargaSuaraActivity" />
+        <activity android:name=".Activity.Kuis.AnggotaKeluargaKuisActivity" />
+        <activity android:name=".Activity.Kuis.TubuhKuisActivity" />
+        <activity android:name=".Activity.Kuis.TubuhSuaraActivity" />
+        <activity android:name=".Activity.Kuis.BuahKuisActivity"></activity>
     </application>
 
 </manifest>

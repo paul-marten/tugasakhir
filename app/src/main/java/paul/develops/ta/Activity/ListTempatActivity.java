@@ -5,9 +5,13 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import paul.develops.ta.Activity.Kuis.HewanKuisActivity;
+import paul.develops.ta.Activity.Kuis.HewanKuisSuaraActivity;
+import paul.develops.ta.Activity.Kuis.KuisActivity;
 import paul.develops.ta.R;
 
 public class ListTempatActivity extends AppCompatActivity {
@@ -23,6 +27,8 @@ public class ListTempatActivity extends AppCompatActivity {
         ImageButton imgButGurun = (ImageButton) findViewById(R.id.butImgGurun);
         ImageButton imgButLaut = (ImageButton) findViewById(R.id.butImgLaut);
         ImageButton imgButFarm = (ImageButton) findViewById(R.id.butImgFarm);
+        Button btnKuisGambar = (Button) findViewById(R.id.btnKuisGambar);
+        Button btnKuisSuara = (Button) findViewById(R.id.btnKuisSuara);
 
         imgButTaman.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,8 +61,26 @@ public class ListTempatActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(ListTempatActivity.this,"Anda Memilih Peternakan", Toast.LENGTH_LONG).show();
-                Intent farmIntent = new Intent(ListTempatActivity.this, FarmActivity.class);
+                Intent farmIntent = new Intent(ListTempatActivity.this, HewanKuisActivity.class);
                 startActivity(farmIntent);
+            }
+        });
+
+        btnKuisGambar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ListTempatActivity.this,"Anda Memilih Kuis Gambar", Toast.LENGTH_LONG).show();
+                Intent kuis1Gambar = new Intent(ListTempatActivity.this, HewanKuisActivity.class);
+                startActivity(kuis1Gambar);
+            }
+        });
+
+        btnKuisSuara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ListTempatActivity.this,"Anda Memilih Kuis Gambar", Toast.LENGTH_LONG).show();
+                Intent kuis1Suara = new Intent(ListTempatActivity.this, HewanKuisSuaraActivity.class);
+                startActivity(kuis1Suara);
             }
         });
     }

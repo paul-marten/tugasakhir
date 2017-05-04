@@ -12,9 +12,9 @@ public class RestClient {
 //        private static String URL_TUGASAKHIR = "http://192.168.43.230:81/tugasakhirAPI";
 //        private static String URL_TUGASAKHIR = "http://192.168.43.214:81/tugasakhirAPI";
 //        private static String URL_TUGASAKHIR = "http://10.108.155.247:81/tugasakhirAPI";
-//        private static String URL_TUGASAKHIR = "http://10.114.1.61:81/tugasakhirAPI";
-        private static String URL_TUGASAKHIR = "http://10.108.98.116:81/tugasakhirAPI";
-//        private static String URL_TUGASAKHIR = "http://172.27.41.159:81/tugasakhirAPI";
+//        private static String URL_TUGASAKHIR = "http://10.114.1d.61:81/tugasakhirAPI";
+        private static String URL_TUGASAKHIR = "http://10.114.56.86:81/tugasakhirAPI";
+//        private static String URL_TUGASAKHIR = "http://172.27.43.132:81/tugasakhirAPI";
 //        private static String URL_TUGASAKHIR = "http://10.108.36.254:81/tugasakhirAPI";
 
         static {
